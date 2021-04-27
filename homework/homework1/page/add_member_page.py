@@ -10,7 +10,7 @@ class AddMember(BasePage):
         return Contact
 
     def goto_add_depart(self):
-        self.driver.find_element(By.CSS_SELECTOR, (".member_colLeft_top_addBtnWrap.js_create_dropdown")).click()
-        self.driver.find_element(By.CSS_SELECTOR, (".js_create_party")).click()
+        self.driver.find(By.CSS_SELECTOR, (".member_colLeft_top_addBtnWrap.js_create_dropdown")).click()
+        self.driver.find(By.CSS_SELECTOR, (".js_create_party")).click()
 
         return AddDepart(self.driver)

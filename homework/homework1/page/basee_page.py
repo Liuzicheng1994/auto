@@ -25,3 +25,5 @@ class BasePage:
     def find(self, by,locator):
         #解元祖
         return self.driver.find_element(by,locator)
+
+
