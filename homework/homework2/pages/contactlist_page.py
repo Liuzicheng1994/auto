@@ -1,11 +1,9 @@
 from appium.webdriver.common.mobileby import MobileBy
-
 from homework.homework2.pages.base_page import BasePage
 from homework.homework2.pages.personal_page import PersonalPage
 
 
 class ContactListPage(BasePage):
-
     def goto_addmemberpage(self):
         #点击 添加成员
         from homework.homework2.pages.addmember_page import AddMemberPage

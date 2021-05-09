@@ -1,7 +1,5 @@
 import logging
-
 from appium import webdriver
-
 from homework.homework2.pages.base_page import BasePage
 from homework.homework2.pages.index_page import IndexPage
 

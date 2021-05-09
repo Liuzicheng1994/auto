@@ -1,8 +1,6 @@
 import pytest
 import yaml
-
 from homework.homework2.pages.app import App
-
 import sys
 sys.path.append('..')
 

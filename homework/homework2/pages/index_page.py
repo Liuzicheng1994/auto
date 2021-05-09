@@ -1,5 +1,4 @@
 from appium.webdriver.common.mobileby import MobileBy
-
 from homework.homework2.pages.base_page import BasePage
 from homework.homework2.pages.contactlist_page import ContactListPage
 
