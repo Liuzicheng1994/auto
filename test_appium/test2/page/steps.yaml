@@ -1,0 +1,19 @@
+- by: id
+  locator: name
+  action: click
+
+- by: id
+  locator: mame2
+  action: click
+
+- by: id
+  locator: mame2
+  action: send
+  value: "{value}"
+
+- by: id
+  locator: mame2
+  action: send
+  value: "{value2}"
+
+
