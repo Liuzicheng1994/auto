@@ -13,7 +13,7 @@ class BasePage:
     def __init__(self, driver: WebDriver = None):
         self.driver = driver
 
-    def find(self, by ,value):
+    def find(self, by, value):
         logging.info(by)
         logging.info(value)
         return self.driver.find_element(by, value)

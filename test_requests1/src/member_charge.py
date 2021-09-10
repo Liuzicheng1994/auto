@@ -3,8 +3,8 @@ import requests
 from test_requests1.src.base import Base
 
 
-class TestMemberCharge(Base):
-    def test_add(self):
+class MemberCharge(Base):
+    def add(self):
         url = f'https://qyapi.weixin.qq.com/cgi-bin/user/create?access_token={self.token}'
         data = {
             "userid": "zhangsan",
@@ -16,13 +16,13 @@ class TestMemberCharge(Base):
         r = requests.post(url, json=data)
         return r.json()
 
-    def test_delete(self):
+    def delete(self):
         userid = 'zhangsan'
         url = f'https://qyapi.weixin.qq.com/cgi-bin/user/delete?access_token={self.token}&userid={userid}'
         r = requests.get(url)
         return r.json()
 
-    def test_update(self):
+    def update(self):
         url = f'https://qyapi.weixin.qq.com/cgi-bin/user/update?access_token={self.token}'
         data = {
             "userid": "zhangsan",
@@ -31,7 +31,7 @@ class TestMemberCharge(Base):
         r = requests.post(url, json=data)
         return r.json()
 
-    def test_find(self):
+    def find(self):
         userid = 'zhangsan'
         url = f'https://qyapi.weixin.qq.com/cgi-bin/user/get?access_token={self.token}&userid={userid}'
         r = requests.get(url)
